@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class Kalkulator extends AppCompatActivity implements Calculator {
+public class Kalkulator extends AppCompatActivity {
     private String operator="";
     public EditText input1,input2;
     double result = 0;

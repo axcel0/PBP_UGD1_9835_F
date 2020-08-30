@@ -8,18 +8,17 @@
 
     <TextView
         android:id="@+id/tvWelcome"
-        android:layout_width="304dp"
-        android:layout_height="52dp"
+        android:layout_width="305dp"
+        android:layout_height="50dp"
         android:layout_marginStart="170dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="170dp"
-        android:background="#3C3E3E3E"
+        android:background="#4de2fe"
         android:text="Selamat Datang"
         android:textAlignment="center"
-        android:textSize="36sp"
+        android:textSize="35sp"
         android:typeface="serif"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,55 +35,48 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvWelcome" />
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcome"
+        app:layout_constraintVertical_bias="0.473" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="411dp"
-        android:layout_height="86dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="21dp"
+        android:layout_width="410dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/btnSelect"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvMenu">
 
         <RadioButton
             android:id="@+id/rbProfile"
-            android:layout_width="123dp"
-            android:layout_height="46dp"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
             android:layout_marginStart="70dp"
             android:layout_marginEnd="235dp"
             android:text="Profil"
             android:textColor="#54C3A3"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvMenu" />
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/rbCalc"
             android:layout_width="123dp"
             android:layout_height="41dp"
             android:layout_marginStart="70dp"
-            android:layout_marginTop="0dp"
             android:text="Kalkulator"
             android:textColor="#54C3A3"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvMenu" />
-
+            android:textSize="20sp" />
     </RadioGroup>
 
     <Button
         android:id="@+id/btnSelect"
-        android:layout_width="156dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
         android:backgroundTint="#6B7CC19D"
         android:text="Pilih Menu"
         app:layout_constraintEnd_toEndOf="parent"

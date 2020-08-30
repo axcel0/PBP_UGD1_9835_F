@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class Kalkulator extends AppCompatActivity {
+public class Kalkulator extends AppCompatActivity implements Calculator {
     private String operator="";
     public EditText input1,input2;
     double result = 0;

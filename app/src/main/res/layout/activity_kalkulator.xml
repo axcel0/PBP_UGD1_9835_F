@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kalkulator">
+
+    <TextView
+        android:id="@+id/tvCalc"
+        android:layout_width="304dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="170dp"
+        android:background="#3C3E3E3E"
+        android:text="Kalkulator"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="304dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Inputan 1"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCalc" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="304dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Inputan 2"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCalc" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="72dp"
+        android:background="#6B7CC19D"
+        android:fontFamily="sans-serif"
+        android:text="+"
+        android:onClick="btnCheck"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/minus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input2" />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="38dp"
+        android:background="#6B7CC19D"
+        android:onClick="btnCheck"
+        android:text="*"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/minus"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plus" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="53dp"
+        android:background="#6B7CC19D"
+        android:text="-"
+        android:onClick="btnCheck"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plus"
+        app:layout_constraintTop_toBottomOf="@+id/input2" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="53dp"
+        android:background="#6B7CC19D"
+        android:text="/"
+        android:onClick="btnCheck"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plus"
+        app:layout_constraintTop_toBottomOf="@+id/minus" />
+
+    <TextView
+        android:id="@+id/tvUnused"
+        android:layout_width="110dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="25dp"
+        android:text="Hasil"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiply" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="110dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="54dp"
+        android:text="...."
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divide" />
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="147dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="back"
+        android:text="Kembali"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 
 public class Kalkulator extends AppCompatActivity implements Calculator {
     private String operator="";
